@@ -167,37 +167,5 @@ public class SpotifyPlaylistTester
                                         
         return awesomeMix;
     }
-    /**
-     * This method will use all of the songs originally stated,
-     * then test.
-     */
-    public void main(){
-        SpotifyPlaylist mix = new SpotifyPlaylist();
-        mix = createAwesomeMix();
-        
-        System.out.println("The songs in the Spotify Playlist:");
-        mix.printSongs();
-        
-        System.out.println("The songs on the Spotify Playlist that are on the 'On My Way' album:");
-        mix.printSongsOnAlbum("On My Way");
-        
-        System.out.println("The songs in the Spotify Playlist that are the 'Progressive Pop' genre:");
-        mix.printSongsOfGenre("Progressive Pop");
-        
-        System.out.println("The songs in the Spotify Playlist from the artist 'Elivin Bishop:'");
-        mix.printSongsOfArtist("Elvin Bishop");
-        
-        System.out.println("This plays the song 'I Want You Back'");
-        mix.play("I Want You Back");
-        
-        System.out.println("This removes the song 'Fooled Around and Fell in Love'");
-        mix.remove("Fooled Around and Fell in Love");
-        
-        System.out.println("The current songs in the Spotify Playlist are now:");
-        mix.printSongs();
-        
-        System.out.println("These are the current top 10 songs:");
-        mix.printTop10();
 
-    }
 }
